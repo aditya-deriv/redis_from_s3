@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'redis_from_s3'
+
+redis_from_aws = Redis_from_S3::CLI.new(ARGV)
+redis_from_aws.run
+
+exit 0
